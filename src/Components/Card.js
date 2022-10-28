@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react'
+import { PropTypes } from 'prop-types';
 
 function Card(props) {
 	const [clicked, setClicked] = useState(false)
@@ -8,14 +9,16 @@ function Card(props) {
 		console.log(`this is ${props.name} clicked: ` + clicked)
 		if(clicked === false) {
 			props.updateGame()
-			setClicked(!clicked)
+			setClicked(true)
 		} else {
+			console.log('end game called from Card')
 			props.endGame()
 		}
 	}
 
 	useEffect(() => {
 		if (props.reset === true) {
+			console.log('reset called ' + props.name)
 			setClicked(false);
 		}
 	}, [props.reset]);
@@ -29,5 +32,11 @@ function Card(props) {
 		</div>
 	</div>;
 }
-
+/*
+Card.protoTypes = {
+	reset: PropTypes.boolean.isRequired,
+	src: PropTypes.string,
+	name: PropTypes.string,
+}
+*/
 export default Card;

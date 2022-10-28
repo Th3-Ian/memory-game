@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header(props) {
 	return (
-		<header>
+		<header className='App-header'>
 			<div>
 				<h1>Adventure Time Memory Game</h1>
 				<p>Get points by clicking on an image but don't click on any more than once!</p>
