@@ -2,6 +2,18 @@ import './App.css';
 import Card from './Components/Card';
 import { useState, useEffect } from 'react';
 import Header from './Components/Header';
+import BMO from './Assets/BMO.webp';
+import Finn from './Assets/Finn_the_Human.webp';
+import Gunter from './Assets/gunter.webp';
+import IceKing from './Assets/iceking.webp';
+import Jake from './Assets/jake.jpg';
+import Lemon from './Assets/lemon.jpg';
+import LSP from './Assets/lsp_pin.jpg';
+import MagicMan from './Assets/magicman.webp';
+import Marceline from './Assets/marceline.jpg';
+import PeppermintButler from './Assets/peppermintButler.jpg';
+import PrincessBG from './Assets/princess-bubblegum-costume.webp';
+import Prismo from './Assets/Prismo.webp';
 
 function App() {
   const [score, setScore] = useState(0);
@@ -28,63 +40,63 @@ function App() {
   const componentsArr = [
     {
       name: 'Finn',
-      src: '',
+      src: Finn,
       reset: resetGame
     },
     {
       name: 'Jake',
-      src: '',
+      src: Jake,
       reset: resetGame
     },
     {
       name: 'Bubblegum Princess',
-      src: '',
+      src: PrincessBG,
       reset: resetGame
     },
     {
       name: 'Ice King',
-      src: '',
+      src: IceKing,
       reset: resetGame
     },
     {
       name: 'Marceline',
-      src: '',
+      src: Marceline,
       reset: resetGame
     },
     {
       name: 'Magic Man',
-      src: '',
+      src: MagicMan,
       reset: resetGame
     },
     {
       name: 'Gunter',
-      src: '',
+      src: Gunter,
       reset: resetGame
     },
     {
       name: 'BMO',
-      src: '',
+      src: BMO,
       reset: resetGame
     },
     {
       name: 'Prismo',
-      src: '',
+      src: Prismo,
       reset: resetGame
     },
     {
       name: 'Lumpy Space Princess',
-      src: '',
+      src: LSP,
       reset: resetGame
     },
 
     {
       name: 'Earl of Lemongrab',
-      src: '',
+      src: Lemon,
       reset: resetGame
     },
     {
       name: 'Peppermint Butler',
-      src: '',
+      src: PeppermintButler,
       reset: resetGame
     }
   ];
